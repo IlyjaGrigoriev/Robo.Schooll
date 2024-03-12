@@ -1,0 +1,169 @@
+@media (min-width:992px) {
+  .burger-menu {
+    display: none;
+
+  }
+
+}
+
+/* бургер-меню */
+
+@media (max-width:991px) {
+
+  nav {
+    display: none;
+  }
+
+
+  .burger-menu__button {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 49;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    transition: 0.6s;
+  }
+
+  .burger-menu__button:hover,
+  .burger-menu__lines {
+    filter: brightness(0.9);
+  }
+
+  .burger-menu__lines,
+  .burger-menu__lines::after,
+  .burger-menu__lines::before {
+    position: absolute;
+    height: 4px;
+    width: 20px;
+    background: black;
+  }
+
+  .burger-menu__lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*абсолютная середина*/
+  }
+
+  .burger-menu__lines::after {
+    content: '';
+    bottom: -8px;
+  }
+
+  .burger-menu__lines::before {
+    content: '';
+    top: -8px;
+  }
+
+  .burger-menu_active .burger-menu__lines {
+    background: transparent;
+  }
+
+  .burger-menu_active .burger-menu__lines::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  .burger-menu_active .burger-menu__lines::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  /*Ссылки при активном меню*/
+  .burger-menu__nav {
+    padding-top: 88px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 48;
+    display: flex;
+    flex-flow: column;
+    background: #262626;
+    overflow-y: left;
+    left: -100%;
+    /*меню спрятано, пока не активно*/
+    opacity: 0.99;
+    top: 0px;
+  }
+
+  .burger-menu_active .burger-menu__nav {
+    left: 0;
+  }
+
+  .burger-menu__link {
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: blueviolet;
+  }
+
+  .burger-menu__link:hover {
+    color: white;
+  }
+
+
+
+
+  .six .d-flex {
+    display: block;
+    
+  }
+
+  .six .d-flex .col-3 {
+    margin: 20px;
+  }
+
+  .cta-btn {
+    margin: 20px;
+  }
+
+
+  .two {
+        padding-top: 30px;
+}
+
+.two .container {
+    font-size: 20px;
+    line-height: 80%;
+}
+
+.two .col-numbers span {
+
+    color: var(--main-bg-color);
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.two .d-flex {
+    padding: 30px 0px;
+    justify-content: space-evenly;
+}
+
+
+
+.two .container p {
+    padding-top: 12px;
+
+}
+
+
+
+  .slick-prev {
+    left: 43%;
+}
+
+.slick-next {
+    right: 43%;
+}
+
+
+
+}

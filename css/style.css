@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --main-bg-color: #d56123;
+    --dark-color: #57024d;
+}
+
+
+body {
+    font-family: "Jost", sans-serif;
+    color: #141024;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    min-width: 320px;
+    background-color: #fff;
+    position: relative;
+}
+
+.container {
+    margin: auto;
+    max-width: 1190px;
+    padding: 0 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+
+/** header **/
+
+header {
+    padding: 30px 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-color);
+    z-index: 2;
+    padding: 5px 100px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+header a {
+    color: #fff;
+    padding-top: 8px;
+}
+
+header .d-flex {
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+.tel-header {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+/*****/
+
+
+.first {
+    background-color: var(--dark-color);
+    min-height: 100vh;
+    display: flex;
+}
+
+.first .container {
+    margin: auto auto 0;
+}
+
+h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.first h1 {
+    padding-top: 22%;
+    margin-bottom: 27px;
+}
+
+
+.first p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 55px;
+}
+
+.first .btn {
+    border-radius: 5px;
+    display: inline-block;
+    padding: 25px 54px;
+    background-color: var(--main-bg-color);
+    color: #fff;
+}
+
+.first .col {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.first img {
+    display: block;
+}
+
+
+
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    padding-bottom: 10px;
+}
+
+.three {
+    background-color: #f9f9f9;
+    padding: 5%;
+}
+
+.col-3 {
+    width: 30%;
+
+}
+
+.tool {
+    display: inline-block;
+    background: gray;
+    border-radius: 50%;
+    line-height: 1;
+    width: 15px;
+    height: 17px;
+    text-align: center;
+    font-size: 12;
+  }
+
+.three .d-flex {
+    justify-content: space-between;
+}
+
+#tooltip {
+    z-index: 9999;
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    background-color: #fff;
+    padding: 5px 10px 5px 10px;
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #555;
+}
+
+/**section two**/
+
+
+.two {
+    color: #000000;
+    padding-top: 100px;
+}
+
+.two .container {
+    font-size: 30px;
+    line-height: 160%;
+}
+
+.two .col-numbers span {
+
+    color: var(--main-bg-color);
+    font-size: 70px;
+    font-weight: 600;
+    padding-bottom: 32px;
+}
+
+.two .d-flex {
+    padding: 100px 0px;
+    justify-content: space-evenly;
+}
+
+.two .col-numbers p {
+    color: rgb(0, 0, 0);
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.two .container p {
+    padding-top: 32px;
+
+}
+
+/**end of section two**/
+
+
+.four {
+    padding-top: 80px;
+}
+
+.teachers-item a {
+    color: var(--main-bg-color);
+    display: block;
+    padding: 10px 0px;
+}
+
+
+
+/**section five**/
+
+.five {
+    padding-top: 186px;
+    padding-bottom: 171px;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.five .p {
+    margin-top: 30px;
+}
+
+.five .author {
+    padding-top: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+}
+
+.five .author span {
+    font-size: 18px;
+    color: #000000;
+}
+
+/* Илья */
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: calc(100% + 40px);
+}
+
+.slick-prev {
+    left: 47%;
+}
+
+.slick-next {
+    right: 47%;
+}
+
+/* конец добавки кода */
+
+
+/**section six**/
+
+.six .d-flex {
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.price-box {
+    border: 1px solid var(--dark-color);
+    border-radius: 20px;
+    display: flex;
+    width: 360px;
+    height: 460px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.price-box .price {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.price-box .price-name {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.price-box a {
+    width: 280px;
+    height: 80px;
+    background-color: var(--main-bg-color);
+    padding: 25px 54px 25px 54px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.price-box-pro {
+    transform: scaleY(1.05);
+    background-color: var(--dark-color);
+    color: #fff;
+    border-radius: 20px;
+    border: 1px solid var(--dark-color);
+}
+
+/***** modal ********/
+
+.modal {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    top: -1000px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.466);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    padding: 60px 15px;
+}
+
+.modal_content {
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 578px;
+    max-height: 588px;
+    color: #fff;
+    background-color: var(--main-bg-color);
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal_active {
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+#close {
+    background-color: var(--dark-color);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.modal_form {
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    width: 408px;
+    height: 286px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.modal_form input {
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.modal_form p {
+    font-size: 20px;
+    text-align: left;
+}
+
+#modal_title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 36px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+/* footer */
+
+.footer {
+    display: block;
+    padding: 40px 0;
+    background-color: #141024;
+
+}
+
+.footer__copy
+{color: rgba(255, 255, 255, 0.295);
+font-size: 16px;}
+
+.footer__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+}
+
+.phone {
+    color: #fff;
+    font-size: 30px;
+}
+
+
+/* ---- grid ---- */
+
+/* .grid {
+    background: #DDD;
+} */
+
+/* clear fix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---- .element-item ---- */
+
+/* 5 columns, percentage width */
+.grid-item,
+.grid-sizer {
+    width: 20%;
+}
+
+.grid-item {
+    float: left;
+    height: 200px;
+background-color: #57024d;
+    border: 5px solid #ffffff;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-item--width2 {
+    width: 40%;
+}
+
+.grid-item--height2 {
+    height: 400px;
+}
+
+
+.grid-item:nth-child(2) {
+    background-image: url(../img/setka/13.jpg);
+
+}
+.grid-item:nth-child(2n + 3) {
+    background-image: url(../img/setka/1.jpg);
+}
+
+.grid-item:nth-child(3) {
+    background-image: url(../img/setka/6.jpg);
+}
+
+.grid-item:nth-child(4) {
+    background-image: url(../img/setka/2.jpg);
+}
+
+
+.grid-item:nth-child(6) {
+    background-image: url(../img/setka/15.jpg);
+}
+
+.grid-item:nth-child(7) {
+    background-image: url(../img/setka/5.jpg);
+}
+
+.grid-item:nth-child(8) {
+    background-image: url(../img/setka/7.jpg);
+}
+
+.grid-item:nth-child(9) {
+    background-image: url(../img/setka/3.jpg);
+}
+
+.grid-item:nth-child(10) {
+    background-image: url(../img/setka/10.jpg);
+}
+
+.grid-item:nth-child(11) {
+    background-image: url(../img/setka/4.jpg);
+}
+
+.grid-item:nth-child(12) {
+    background-image: url(../img/setka/8.jpg);
+}
+
+.grid-item:nth-child(14) {
+    background-image: url(../img/setka/16.jpg);
+}
+
